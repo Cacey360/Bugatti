@@ -1,5 +1,5 @@
  {
-  "name": "Bugatti",
+  "name": "Nzi",
   "version": "2.0.0",
   "description": "",
   "main": "index.js",
@@ -17,7 +17,7 @@
     "whatsapp-bot",
     "franceking1"
   ],
-  "author": "Marisel",
+  "author": "Mark",
   "license": "ISC",
   "engines": {
     "node": "20.x",
