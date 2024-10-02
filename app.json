@@ -1,8 +1,8 @@
 {
-  "name":"𝑩𝒖𝒈𝒂𝒕𝒕𝒊",
-  "description":"𝑻𝒉𝒆 𝑭𝒂𝒔𝒕𝒆𝒔𝒕 𝑩𝒐𝒕",
+  "name":"Nzi",
+  "description":"Nzi 𝑩𝒐𝒕",
   "keywords":["bot","node","baileys","whatsapp"],
-  "logo":"https://telegra.ph/file/43a008a3fcf05cf6460f3.jpg",
+  "logo":"https://github.com/Cacey360/Bugatti/blob/main/media/GT/logo.jpg",
   "repository":"https://github.com/betingrich/Bugatti",
   "succes_url":"/",
   "stack":"container",
@@ -35,7 +35,7 @@
     "BOT_NAME" : {
        
       "description":"put A name for your bot",
-      "value":"𝐁𝐔𝐆𝐀𝐓𝐓𝐈",
+      "value":"Nzi Bot",
       "required":false
 
     } ,
@@ -72,16 +72,16 @@
     "OWNER_NAME":
     {
     
-    "desc": "Your Name",
+    "desc": "Mark",
     "required": false,
-    "value": "𝐊𝐢𝐧𝐠 𝐌𝐚𝐫𝐢𝐬𝐞𝐥"
+    "value": "Mark"
   },
     "NUMERO_OWNER":
   {
     
     "desc": "Your number , dont put '+' and put you area code(exemple of togo '228')",
     "required":false,
-    "value": "254740007567"
+    "value": "254736429306"
   },
     "WARN_COUNT":
   {
@@ -97,7 +97,7 @@
   },
   "PRESENCE":{
     "description":"Mark your presence: 1 to indicate that you are online even if you are not. 2 to indicate that you are currently typing a message. 3 to indicate that you are currently recording an audio. Or leave the field blank to indicate your real state.",
-    "value":"2",
+    "value":"1",
     "required": true 
   },
   "ANTI_DELETE_MESSAGE" : {
