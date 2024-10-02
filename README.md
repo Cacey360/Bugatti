@@ -1,6 +1,6 @@
 <p align="center">  
   <a href="https://telegra.ph/file/ec469447d91f56a74f189.jpg">
-    <img alt="secktor docs" height="300" src="https://telegra.ph/file/ec469447d91f56a74f189.jpg">
+    <img alt="secktor docs" height="300" src="https://github.com/Cacey360/Bugatti/blob/main/media/GT/front%20logo.jpg">
     <h1 align="center"> 𝐁𝐔𝐆𝐀𝐓𝐓𝐈 𝐁𝐘 𝐌𝐀𝐑𝐈𝐒𝐄𝐋</h1>
   </a>
 </p>  
