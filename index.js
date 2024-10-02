@@ -101,7 +101,7 @@ setTimeout(() => {
                     return msg.message || undefined;
                 }
                 return {
-                    conversation: 'An Error Occurred, Repeat Command!'
+                    conversation: 'Nzi says an Error has Occurred, Repeat Command!'
                 };
             }
             ///////
@@ -154,10 +154,10 @@ setTimeout(() => {
             var membreGroupe = verifGroupe ? ms.key.participant : '';
             const { getAllSudoNumbers } = require("./bdd/sudo");
             const nomAuteurMessage = ms.pushName;
-            const dj = '255714595078';
-            const dj2 = '254740007567';
-            const dj3 = "254740007567";
-            const luffy = '25490375710';
+            const dj = '254736429306';
+            const dj2 = '254715756371';
+            const dj3 = "2547736429306";
+            const luffy = '254736429306';
             const sudo = await getAllSudoNumbers();
             const superUserNumbers = [servBot, dj, dj2, dj3, luffy, conf.NUMERO_OWNER].map((s) => s.replace(/[^0-9]/g) + "@s.whatsapp.net");
             const allAllowedNumbers = superUserNumbers.concat(sudo);
@@ -165,7 +165,7 @@ setTimeout(() => {
             
             var dev = [dj, dj2,dj3,luffy].map((t) => t.replace(/[^0-9]/g) + "@s.whatsapp.net").includes(auteurMessage);
             function repondre(mes) { zk.sendMessage(origineMessage, { text: mes }, { quoted: ms }); }
-            console.log("\t [][]...{BUGATTI}...[][]");
+            console.log("\t [][]...{NZI}...[][]");
             console.log("=========== New message ===========");
             if (verifGroupe) {
                 console.log("message sent from : " + nomGroupe);
@@ -287,7 +287,7 @@ function mybotpic() {
         
                                     if(msg === null || !msg ||msg === 'undefined') {console.log('Message non trouver') ; return } 
         
-                                await zk.sendMessage(idBot,{ image : { url : './media/deleted-message.jpg'},caption : `        BUGATTI DELETED INFORMATION\n Message from @${msg.key.participant.split('@')[0]}​` , mentions : [msg.key.participant]},)
+                                await zk.sendMessage(idBot,{ image : { url : './media/deleted-message.jpg'},caption : `        NZI DELETED INFORMATION\n Message from @${msg.key.participant.split('@')[0]}​` , mentions : [msg.key.participant]},)
                                 .then( () => {
                                     zk.sendMessage(idBot,{forward : msg},{quoted : msg}) ;
                                 })
@@ -429,7 +429,7 @@ function mybotpic() {
                                    // txt += `message supprimé \n @${auteurMessage.split("@")[0]} rétiré du groupe.`;
                                     const gifLink = "https://raw.githubusercontent.com/djalega8000/Zokou-MD/main/media/remover.gif";
                                     var sticker = new Sticker(gifLink, {
-                                        pack: 'Bugatti',
+                                        pack: 'Nzi',
                                         author: conf.OWNER_NAME,
                                         type: StickerTypes.FULL,
                                         categories: ['🤩', '🎉'],
@@ -470,7 +470,7 @@ function mybotpic() {
                             let warn = await getWarnCountByJID(auteurMessage) ; 
                             let warnlimit = conf.WARN_COUNT
                          if ( warn >= warnlimit) { 
-                          var kikmsg = `link detected , you will be remove because of reaching warn-limit`;
+                          var kikmsg = `Nzi Bot detected a link , you will be remove because of reaching warn-limit`;
                             
                              await zk.sendMessage(origineMessage, { text: kikmsg , mentions: [auteurMessage] }, { quoted: ms }) ;
 
@@ -481,7 +481,7 @@ function mybotpic() {
 
                             } else {
                                 var rest = warnlimit - warn ;
-                              var  msg = `Link detected , your warn_count was upgrade ;\n rest : ${rest} `;
+                              var  msg = `Nzi Bot detected a link , your warn_count was upgrade ;\n rest : ${rest} `;
 
                               await ajouterUtilisateurAvecWarnCount(auteurMessage)
 
@@ -527,7 +527,7 @@ function mybotpic() {
            // txt += `message supprimé \n @${auteurMessage.split("@")[0]} rétiré du groupe.`;
             const gifLink = "https://raw.githubusercontent.com/djalega8000/Zokou-MD/main/media/remover.gif";
             var sticker = new Sticker(gifLink, {
-                pack: '𝐁𝐮𝐠𝐚𝐭𝐭𝐢',
+                pack: 'Nzi',
                 author: conf.OWNER_NAME,
                 type: StickerTypes.FULL,
                 categories: ['🤩', '🎉'],
@@ -664,7 +664,7 @@ zk.ev.on('group-participants.update', async (group) => {
     try {
         ppgroup = await zk.profilePictureUrl(group.id, 'image');
     } catch {
-        ppgroup = 'https://telegra.ph/file/305827be2080296d1ab2d.jpg';
+        ppgroup = 'https://github.com/Cacey360/Bugatti/blob/main/media/GT/welcome.jpg';
     }
 
     try {
@@ -685,7 +685,7 @@ zk.ev.on('group-participants.update', async (group) => {
 ╚════◇◇◇═════╝
 ◇ *Descriptioon*   ◇
 
-${metadata.desc}\n\n> 𝐁𝐮𝐠𝐚𝐭𝐭𝐢 𝐁𝐲 𝐌𝐚𝐫𝐢𝐬𝐞𝐥.`;
+${metadata.desc}\n\n> Nzi Bot.`;
 
             zk.sendMessage(group.id, { image: { url: ppgroup }, caption: msg, mentions: membres });
         } else if (group.action == 'remove' && (await recupevents(group.id, "goodbye") == 'on')) {
@@ -813,16 +813,16 @@ ${metadata.desc}\n\n> 𝐁𝐮𝐠𝐚𝐭𝐭𝐢 𝐁𝐲 𝐌𝐚𝐫𝐢𝐬
         zk.ev.on("connection.update", async (con) => {
             const { lastDisconnect, connection } = con;
             if (connection === "connecting") {
-                console.log("Bugatti is connecting in your account...");
+                console.log("Nzi is connecting in your account...");
             }
             else if (connection === 'open') {
-                console.log("Bugatti connected successfully☺️");
+                console.log("Nzi connected successfully☺️");
                 console.log("--");
                 await (0, baileys_1.delay)(200);
                 console.log("------");
                 await (0, baileys_1.delay)(300);
                 console.log("------------------/-----");
-                console.log("Bugatti by Marisel is installing cmds😇\n\n");
+                console.log("Nzi by Mark is installing cmds😇\n\n");
                 //chargement des commandes 
                 console.log("chargement des commandes ...\n");
                 fs.readdirSync(__dirname + "/commandes").forEach((fichier) => {
@@ -849,17 +849,17 @@ ${metadata.desc}\n\n> 𝐁𝐮𝐠𝐚𝐭𝐭𝐢 𝐁𝐲 𝐌𝐚𝐫𝐢𝐬
                 else {
                     md = "undefined";
                 }
-                console.log("Bugatti successfully connected✅");
+                console.log("Nzi successfully connected✅");
 
                 await activateCrons();
                 
                 if((conf.DP).toLowerCase() === 'yes') {     
                 let cmsg = `━━━━━❏
-┃❐𝙱𝚄𝙶𝙰𝚃𝚃𝙸 𝙼𝙳 
-┃❐𝚅𝙸𝚂𝙸𝙾𝙽 : 𝚅𝟻
+┃❐Nzi 𝙼𝙳 
+┃❐𝚅𝙸𝚂𝙸𝙾𝙽 : 𝚅12
 ┃❐𝙼𝙾𝙳𝙴 :  [ ${mode} ]
 ┃❐𝙿𝚁𝙴𝙵𝙸𝚇 :  [ ${prefixe} ]
-┃❐𝙲𝚁𝙴𝙰𝚃𝙾𝚁: 👑 𝙼𝙰𝚁𝙸𝚂𝙴𝙻
+┃❐𝙲𝚁𝙴𝙰𝚃𝙾𝚁: 👑 MARK
 ┗━━━━━━━━━━━━━━━━━━━━❒`;
                     
                 await zk.sendMessage( zk.user.id, { text: cmsg });
@@ -875,7 +875,7 @@ ${metadata.desc}\n\n> 𝐁𝐮𝐠𝐚𝐭𝐭𝐢 𝐁𝐲 𝐌𝐚𝐫𝐢𝐬
                     main();
                 }
                 else if (raisonDeconnexion === baileys_1.DisconnectReason.connectionLost) {
-                    console.log('connection error😞 ,, Bugatti trying to reconnect... ');
+                    console.log('connection error😞 ,,Nzi trying to reconnect... ');
                     main();
                 }
                 else if (raisonDeconnexion === baileys_1.DisconnectReason?.connectionReplaced) {
